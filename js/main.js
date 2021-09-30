@@ -6,16 +6,15 @@ const oddMassive = []; // нечетные числа
 
 const game = () => {
   let x = first % second;
-  if (first === number && second === number) {
-    while (evenMassive.length <= 10 || oddMassive <= 10) {
-      if (x === 0) {
+  if (first !== String && second !== String) {
+    while (evenMassive.length < 6 || oddMassive < 6) {
+      if (x == 0) {
         evenMassive.push(x);
       } else {
         oddMassive.push(x);
-      }
-      continue;
+      }      
     }
-    if (evenMassive.length === 10) {
+    if (evenMassive.length === 5) {
       alert("The even wins!");
     } else {
       alert("The odd wins!");
@@ -25,4 +24,4 @@ const game = () => {
   }
 }
 
-game(20);
+game(10);
