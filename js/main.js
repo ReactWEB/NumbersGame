@@ -11,13 +11,12 @@ const game = () => {
     } else {
       oddMassive.push(x);
     }
-  } while (evenMassive.length > 0 && evenMassive.length < 3 || oddMassive.length > 0 && oddMassive.length < 3) {
     if (evenMassive.length === 2) {
-      console.log("The even wins!");
+      alert("The even wins!");
     } else if (oddMassive.length === 2) {
-      console.log("The odd wins!");
-    }
-  }
+      alert("The odd wins!");
+    }  
+  } while (evenMassive.length > 0 && evenMassive.length < 3 || oddMassive.length > 0 && oddMassive.length < 3);    
 }
 
 game();
